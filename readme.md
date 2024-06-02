@@ -8,7 +8,9 @@ This datapack has builtin compat for [Quark](https://www.curseforge.com/minecraf
 
 - Consolidated existing Farmer's Delight recipes which output planks, leather, and dyes.
 - Many more wooden objects can be broken down into their corresponding planks.
-- Ladders and wooden slabs can be salvaged for sticks.
+- Larger items like chests yield as much as 4 planks.
+- Ladders, wooden slabs, buttons, simple tools, and other items can be salvaged for sticks.
+- Pry apart chest boats with a pickaxe.
 - All items that produce dyes through crafting now produce dyes through cutting as well.
 - Add these tags to your items to get them included in the corresponding recipes:
   - `#recyclersdelight:salvage_1_stick`
