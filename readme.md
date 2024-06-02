@@ -19,6 +19,8 @@ This datapack has builtin compat for [Quark](https://www.curseforge.com/minecraf
   - `#recyclersdelight:salvage_4_WOOD_planks`
   - `#recyclersdelight:salvage_2_COLOR_dye` (replace COLOR with a real dye color name)
 
+Note that Quark woods are also accounted for.
+
 ## Roadmap
 
 <details>
