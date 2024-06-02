@@ -5,6 +5,7 @@
     "build": "deno task gen && deno task instance:sync",
     "gen": "deno run --allow-write --allow-read scripts/generateDatapack.ts",
     "instance:open": "deno run --allow-read --allow-run scripts/openInstance.ts",
-    "instance:sync": "deno run --allow-read --allow-write scripts/syncDatapackToInstance.ts"
+    "instance:sync": "deno run --allow-read --allow-write scripts/syncDatapackToInstance.ts",
+    "zip": "deno task gen && deno run --allow-read --allow-write --allow-run scripts/zipDatapack.ts"
   }
 }
