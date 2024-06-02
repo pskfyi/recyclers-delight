@@ -1,7 +1,7 @@
 import { DataPack } from "../DataPack.ts";
 import { tagsByType } from "../utils.ts";
 import { recipes } from "../../farmersdelight/mod.ts";
-import { item, tag } from "../../minecraft/mod.ts";
+import { ingredient } from "../../minecraft/mod.ts";
 import { namespaced } from "../utils.ts";
 
 export const OMIT_ITEM = Symbol("omit");
@@ -78,15 +78,15 @@ const RECIPES = {
   salvage1Planks(wood: string, planksID: string) {
     return recipes.cutting(
       recipes.cutting.TOOL.AXE,
-      tag(namespaced(`salvage_1_${wood}_planks`)),
-      [item(planksID)],
+      ingredient.tag(namespaced(`salvage_1_${wood}_planks`)),
+      [ingredient.item(planksID)],
     );
   },
   salvage4Planks(wood: string, planksID: string) {
     return recipes.cutting(
       recipes.cutting.TOOL.AXE,
-      tag(namespaced(`salvage_4_${wood}_planks`)),
-      [item(planksID, 4)],
+      ingredient.tag(namespaced(`salvage_4_${wood}_planks`)),
+      [ingredient.item(planksID, 4)],
     );
   },
   salvageBookshelf(
@@ -95,8 +95,8 @@ const RECIPES = {
   ) {
     return recipes.cutting(
       recipes.cutting.TOOL.AXE,
-      item(bookshelfID),
-      [item(planksID, 4), item("book", 3)],
+      ingredient.item(bookshelfID),
+      [ingredient.item(planksID, 4), ingredient.item("book", 3)],
     );
   },
   salvageChestBoat(
@@ -105,8 +105,8 @@ const RECIPES = {
   ) {
     return recipes.cutting(
       recipes.cutting.TOOL.PICKAXE,
-      item(chestBoatID),
-      [item(boatID), item("chest")],
+      ingredient.item(chestBoatID),
+      [ingredient.item(boatID), ingredient.item("chest")],
     );
   },
 };

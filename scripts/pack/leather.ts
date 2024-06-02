@@ -1,7 +1,7 @@
 import { NAMESPACE } from "../constants/mod.ts";
 import { recipes } from "../farmersdelight/mod.ts";
 import { Forge } from "../forge/mod.ts";
-import { ARMOR_TYPES, item, tag } from "../minecraft/mod.ts";
+import { ARMOR_TYPES, ingredient } from "../minecraft/mod.ts";
 import { DataPack } from "./DataPack.ts";
 import { namespaced, tagsByType } from "./utils.ts";
 
@@ -16,8 +16,8 @@ const RECIPES: DataPack.RecipesByNamespace = {
   [NAMESPACE]: {
     salvage_1_leather: recipes.cutting(
       recipes.cutting.TOOL.SHEARS,
-      tag(namespaced("salvage_1_leather")),
-      [item("leather", 1)],
+      ingredient.tag(namespaced("salvage_1_leather")),
+      [ingredient.item("leather", 1)],
     ),
   },
 };

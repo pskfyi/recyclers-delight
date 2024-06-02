@@ -2,7 +2,7 @@ import { DataPack } from "../DataPack.ts";
 import { namespaced, tagsByType } from "../utils.ts";
 import { NAMESPACE } from "../../constants/namespace.ts";
 import { recipes } from "../../farmersdelight/mod.ts";
-import { item } from "../../minecraft/mod.ts";
+import { ingredient } from "../../minecraft/mod.ts";
 
 const salvage1Stick = "salvage_1_stick";
 const salvage2Sticks = "salvage_2_sticks";
@@ -11,12 +11,12 @@ export const RECIPES: DataPack.RecipesByName = {
   [salvage1Stick]: recipes.cutting(
     recipes.cutting.TOOL.AXE,
     { tag: namespaced(salvage1Stick) },
-    [item("stick")],
+    [ingredient.item("stick")],
   ),
   [salvage2Sticks]: recipes.cutting(
     recipes.cutting.TOOL.AXE,
     { tag: namespaced(salvage2Sticks) },
-    [item("stick", 2)],
+    [ingredient.item("stick", 2)],
   ),
 };
 
