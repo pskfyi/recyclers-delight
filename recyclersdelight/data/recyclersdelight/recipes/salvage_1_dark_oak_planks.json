@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_1_dark_oak_planks"
+    }
+  ],
+  "result": [
+    {
+      "item": "dark_oak_planks"
+    }
+  ]
+}

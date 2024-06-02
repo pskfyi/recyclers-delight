@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_1_jungle_planks"
+    }
+  ],
+  "result": [
+    {
+      "item": "jungle_planks"
+    }
+  ]
+}

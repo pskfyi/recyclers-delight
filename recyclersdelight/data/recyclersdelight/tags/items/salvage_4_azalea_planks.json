@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "quark:azalea_boat",
+      "required": false
+    },
+    {
+      "id": "everycomp:fd/quark/azalea_cabinet",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_chest",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/azalea_full_drawers_1",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/azalea_full_drawers_2",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/azalea_full_drawers_4",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/azalea_half_drawers_1",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/azalea_half_drawers_2",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/azalea_half_drawers_4",
+      "required": false
+    }
+  ]
+}

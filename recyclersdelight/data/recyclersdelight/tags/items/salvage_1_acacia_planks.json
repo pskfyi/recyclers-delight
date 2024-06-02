@@ -1,0 +1,28 @@
+{
+  "values": [
+    "acacia_stairs",
+    "acacia_fence",
+    "acacia_fence_gate",
+    "acacia_door",
+    "acacia_trapdoor",
+    "acacia_pressure_plate",
+    "acacia_sign",
+    "acacia_hanging_sign",
+    {
+      "id": "quark:acacia_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_acacia_post",
+      "required": false
+    },
+    {
+      "id": "create:acacia_window",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:acacia_trim",
+      "required": false
+    }
+  ]
+}

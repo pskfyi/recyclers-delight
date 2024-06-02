@@ -1,0 +1,57 @@
+{
+  "values": [
+    "ladder",
+    {
+      "id": "quark:ancient_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:spruce_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:birch_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:jungle_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:acacia_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:dark_oak_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:crimson_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:warped_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:mangrove_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:bamboo_ladder",
+      "required": false
+    },
+    {
+      "id": "quark:cherry_ladder",
+      "required": false
+    }
+  ]
+}

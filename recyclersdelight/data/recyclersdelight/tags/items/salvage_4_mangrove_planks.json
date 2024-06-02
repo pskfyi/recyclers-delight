@@ -1,0 +1,38 @@
+{
+  "values": [
+    "mangrove_boat",
+    "farmersdelight:mangrove_cabinet",
+    {
+      "id": "quark:mangrove_chest",
+      "required": false
+    },
+    {
+      "id": "quark:mangrove_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:mangrove_full_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:mangrove_full_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:mangrove_full_drawers_4",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:mangrove_half_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:mangrove_half_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:mangrove_half_drawers_4",
+      "required": false
+    }
+  ]
+}

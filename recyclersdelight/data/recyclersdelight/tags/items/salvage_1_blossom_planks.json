@@ -1,0 +1,52 @@
+{
+  "values": [
+    {
+      "id": "quark:blossom_planks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_fence",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_fence_gate",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_door",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_trapdoor",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_sign",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_blossom_post",
+      "required": false
+    },
+    {
+      "id": "everycomp:c/quark/blossom_window",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/blossom_trim",
+      "required": false
+    }
+  ]
+}

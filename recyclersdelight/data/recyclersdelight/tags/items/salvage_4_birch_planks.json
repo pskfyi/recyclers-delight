@@ -1,0 +1,38 @@
+{
+  "values": [
+    "birch_boat",
+    "farmersdelight:birch_cabinet",
+    {
+      "id": "quark:birch_chest",
+      "required": false
+    },
+    {
+      "id": "quark:birch_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:birch_full_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:birch_full_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:birch_full_drawers_4",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:birch_half_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:birch_half_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:birch_half_drawers_4",
+      "required": false
+    }
+  ]
+}

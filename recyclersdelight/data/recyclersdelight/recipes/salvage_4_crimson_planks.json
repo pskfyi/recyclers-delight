@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_4_crimson_planks"
+    }
+  ],
+  "result": [
+    {
+      "item": "crimson_planks",
+      "count": 4
+    }
+  ]
+}

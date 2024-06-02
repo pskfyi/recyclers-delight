@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_2_light_blue_dye"
+    }
+  ],
+  "result": [
+    {
+      "item": "light_blue_dye",
+      "count": 2
+    }
+  ]
+}

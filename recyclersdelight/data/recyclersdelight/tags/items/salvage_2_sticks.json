@@ -1,0 +1,47 @@
+{
+  "values": [
+    "wooden_axe",
+    "wooden_hoe",
+    "wooden_pickaxe",
+    "wooden_shovel",
+    "stone_axe",
+    "stone_hoe",
+    "stone_pickaxe",
+    "stone_shovel",
+    "#recyclersdelight:ladders",
+    "bamboo_mosaic_slab",
+    {
+      "id": "quark:bamboo_mosaic_vertical_slab",
+      "required": false
+    },
+    {
+      "id": "quark:bamboo_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_bamboo_post",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bamboo_spikes",
+      "required": false
+    },
+    {
+      "id": "supplementaries:bamboo_spikes_tipped",
+      "required": false
+    },
+    "#wooden_slabs",
+    {
+      "id": "#quark:wooden_vertical_slabs",
+      "required": false
+    },
+    {
+      "id": "#supplementaries:sign_posts",
+      "required": false
+    },
+    {
+      "id": "#suppsquared:item_shelves",
+      "required": false
+    }
+  ]
+}

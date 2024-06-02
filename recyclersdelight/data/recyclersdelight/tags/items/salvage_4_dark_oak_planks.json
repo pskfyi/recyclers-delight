@@ -1,0 +1,38 @@
+{
+  "values": [
+    "dark_oak_boat",
+    "farmersdelight:dark_oak_cabinet",
+    {
+      "id": "quark:dark_oak_chest",
+      "required": false
+    },
+    {
+      "id": "quark:dark_oak_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:dark_oak_full_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:dark_oak_full_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:dark_oak_full_drawers_4",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:dark_oak_half_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:dark_oak_half_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:dark_oak_half_drawers_4",
+      "required": false
+    }
+  ]
+}

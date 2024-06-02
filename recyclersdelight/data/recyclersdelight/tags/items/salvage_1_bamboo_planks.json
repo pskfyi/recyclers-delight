@@ -1,0 +1,21 @@
+{
+  "values": [
+    "bamboo_mosaic_stairs",
+    "bamboo_stairs",
+    "bamboo_fence",
+    "bamboo_fence_gate",
+    "bamboo_door",
+    "bamboo_trapdoor",
+    "bamboo_pressure_plate",
+    "bamboo_sign",
+    "bamboo_hanging_sign",
+    {
+      "id": "create:bamboo_window",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:bamboo_trim",
+      "required": false
+    }
+  ]
+}

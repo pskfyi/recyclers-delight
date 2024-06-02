@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  },
+  "ingredients": [
+    {
+      "item": "quark:bamboo_bookshelf"
+    }
+  ],
+  "result": [
+    {
+      "item": "bamboo_planks",
+      "count": 4
+    },
+    {
+      "item": "book",
+      "count": 3
+    }
+  ]
+}

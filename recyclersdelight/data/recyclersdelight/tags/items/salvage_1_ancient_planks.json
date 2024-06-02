@@ -1,0 +1,52 @@
+{
+  "values": [
+    {
+      "id": "quark:ancient_planks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_fence",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_fence_gate",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_door",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_trapdoor",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_sign",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_ancient_post",
+      "required": false
+    },
+    {
+      "id": "everycomp:c/quark/ancient_window",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/ancient_trim",
+      "required": false
+    }
+  ]
+}

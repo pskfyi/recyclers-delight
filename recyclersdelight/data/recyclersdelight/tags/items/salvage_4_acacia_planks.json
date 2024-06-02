@@ -1,0 +1,38 @@
+{
+  "values": [
+    "acacia_boat",
+    "farmersdelight:acacia_cabinet",
+    {
+      "id": "quark:acacia_chest",
+      "required": false
+    },
+    {
+      "id": "quark:acacia_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:acacia_full_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:acacia_full_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:acacia_full_drawers_4",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:acacia_half_drawers_1",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:acacia_half_drawers_2",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:acacia_half_drawers_4",
+      "required": false
+    }
+  ]
+}

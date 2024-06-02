@@ -1,0 +1,28 @@
+{
+  "values": [
+    "spruce_stairs",
+    "spruce_fence",
+    "spruce_fence_gate",
+    "spruce_door",
+    "spruce_trapdoor",
+    "spruce_pressure_plate",
+    "spruce_sign",
+    "spruce_hanging_sign",
+    {
+      "id": "quark:spruce_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_spruce_post",
+      "required": false
+    },
+    {
+      "id": "create:spruce_window",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:spruce_trim",
+      "required": false
+    }
+  ]
+}

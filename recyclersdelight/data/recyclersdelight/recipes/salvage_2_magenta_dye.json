@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_2_magenta_dye"
+    }
+  ],
+  "result": [
+    {
+      "item": "magenta_dye",
+      "count": 2
+    }
+  ]
+}

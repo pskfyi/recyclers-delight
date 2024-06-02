@@ -1,0 +1,28 @@
+{
+  "values": [
+    "mangrove_stairs",
+    "mangrove_fence",
+    "mangrove_fence_gate",
+    "mangrove_door",
+    "mangrove_trapdoor",
+    "mangrove_pressure_plate",
+    "mangrove_sign",
+    "mangrove_hanging_sign",
+    {
+      "id": "quark:mangrove_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_mangrove_post",
+      "required": false
+    },
+    {
+      "id": "create:mangrove_window",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:mangrove_trim",
+      "required": false
+    }
+  ]
+}

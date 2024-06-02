@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  },
+  "ingredients": [
+    {
+      "item": "birch_chest_boat"
+    }
+  ],
+  "result": [
+    {
+      "item": "birch_boat"
+    },
+    {
+      "item": "chest"
+    }
+  ]
+}

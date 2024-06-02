@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  },
+  "ingredients": [
+    {
+      "item": "mangrove_chest_boat"
+    }
+  ],
+  "result": [
+    {
+      "item": "mangrove_boat"
+    },
+    {
+      "item": "chest"
+    }
+  ]
+}

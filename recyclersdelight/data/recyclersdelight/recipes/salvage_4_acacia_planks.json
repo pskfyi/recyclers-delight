@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_4_acacia_planks"
+    }
+  ],
+  "result": [
+    {
+      "item": "acacia_planks",
+      "count": 4
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  },
+  "ingredients": [
+    {
+      "item": "quark:warped_bookshelf"
+    }
+  ],
+  "result": [
+    {
+      "item": "warped_planks",
+      "count": 4
+    },
+    {
+      "item": "book",
+      "count": 3
+    }
+  ]
+}

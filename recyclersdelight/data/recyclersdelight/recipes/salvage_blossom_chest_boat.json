@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  },
+  "ingredients": [
+    {
+      "item": "quark:blossom_chest_boat"
+    }
+  ],
+  "result": [
+    {
+      "item": "quark:blossom_boat"
+    },
+    {
+      "item": "chest"
+    }
+  ]
+}

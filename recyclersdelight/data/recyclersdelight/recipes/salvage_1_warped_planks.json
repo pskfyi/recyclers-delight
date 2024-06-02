@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_dig"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_1_warped_planks"
+    }
+  ],
+  "result": [
+    {
+      "item": "warped_planks"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "quark:blossom_boat",
+      "required": false
+    },
+    {
+      "id": "everycomp:fd/quark/blossom_cabinet",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_chest",
+      "required": false
+    },
+    {
+      "id": "quark:blossom_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/blossom_full_drawers_1",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/blossom_full_drawers_2",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/blossom_full_drawers_4",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/blossom_half_drawers_1",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/blossom_half_drawers_2",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/blossom_half_drawers_4",
+      "required": false
+    }
+  ]
+}

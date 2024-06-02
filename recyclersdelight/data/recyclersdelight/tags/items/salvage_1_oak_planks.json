@@ -1,0 +1,28 @@
+{
+  "values": [
+    "oak_stairs",
+    "oak_fence",
+    "oak_fence_gate",
+    "oak_door",
+    "oak_trapdoor",
+    "oak_pressure_plate",
+    "oak_sign",
+    "oak_hanging_sign",
+    {
+      "id": "quark:oak_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_oak_post",
+      "required": false
+    },
+    {
+      "id": "create:oak_window",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:oak_trim",
+      "required": false
+    }
+  ]
+}

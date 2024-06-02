@@ -1,0 +1,31 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "quark"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "type": "farmersdelight:tool_action",
+          "action": "axe_dig"
+        },
+        "ingredients": [
+          {
+            "tag": "recyclersdelight:salvage_4_ancient_planks"
+          }
+        ],
+        "result": [
+          {
+            "item": "quark:ancient_planks",
+            "count": 4
+          }
+        ]
+      }
+    }
+  ]
+}

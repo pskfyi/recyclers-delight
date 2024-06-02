@@ -1,0 +1,28 @@
+{
+  "values": [
+    "dark_oak_stairs",
+    "dark_oak_fence",
+    "dark_oak_fence_gate",
+    "dark_oak_door",
+    "dark_oak_trapdoor",
+    "dark_oak_pressure_plate",
+    "dark_oak_sign",
+    "dark_oak_hanging_sign",
+    {
+      "id": "quark:dark_oak_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_dark_oak_post",
+      "required": false
+    },
+    {
+      "id": "create:dark_oak_window",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:dark_oak_trim",
+      "required": false
+    }
+  ]
+}

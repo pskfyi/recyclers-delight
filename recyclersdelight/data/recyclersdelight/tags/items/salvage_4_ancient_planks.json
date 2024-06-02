@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "quark:ancient_boat",
+      "required": false
+    },
+    {
+      "id": "everycomp:fd/quark/ancient_cabinet",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_chest",
+      "required": false
+    },
+    {
+      "id": "quark:ancient_trapped_chest",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/ancient_full_drawers_1",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/ancient_full_drawers_2",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/ancient_full_drawers_4",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/ancient_half_drawers_1",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/ancient_half_drawers_2",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/ancient_half_drawers_4",
+      "required": false
+    }
+  ]
+}

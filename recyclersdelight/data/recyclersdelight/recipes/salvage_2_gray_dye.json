@@ -1,0 +1,33 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "salvage_2_gray_dye"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "tag": "forge:tools/knives"
+        },
+        "ingredients": [
+          {
+            "tag": "recyclersdelight:salvage_2_gray_dye"
+          }
+        ],
+        "result": [
+          {
+            "item": "gray_dye",
+            "count": 2
+          }
+        ]
+      }
+    }
+  ]
+}

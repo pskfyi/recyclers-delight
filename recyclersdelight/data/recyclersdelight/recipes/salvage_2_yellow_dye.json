@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_2_yellow_dye"
+    }
+  ],
+  "result": [
+    {
+      "item": "yellow_dye",
+      "count": 2
+    }
+  ]
+}

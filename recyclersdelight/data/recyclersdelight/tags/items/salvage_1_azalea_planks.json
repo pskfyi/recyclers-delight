@@ -1,0 +1,52 @@
+{
+  "values": [
+    {
+      "id": "quark:azalea_planks_stairs",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_fence",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_fence_gate",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_door",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_trapdoor",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_pressure_plate",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_sign",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_hanging_sign",
+      "required": false
+    },
+    {
+      "id": "quark:azalea_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_azalea_post",
+      "required": false
+    },
+    {
+      "id": "everycomp:c/quark/azalea_window",
+      "required": false
+    },
+    {
+      "id": "everycomp:sd/quark/azalea_trim",
+      "required": false
+    }
+  ]
+}

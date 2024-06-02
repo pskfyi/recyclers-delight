@@ -1,0 +1,28 @@
+{
+  "values": [
+    "cherry_stairs",
+    "cherry_fence",
+    "cherry_fence_gate",
+    "cherry_door",
+    "cherry_trapdoor",
+    "cherry_pressure_plate",
+    "cherry_sign",
+    "cherry_hanging_sign",
+    {
+      "id": "quark:cherry_post",
+      "required": false
+    },
+    {
+      "id": "quark:stripped_cherry_post",
+      "required": false
+    },
+    {
+      "id": "create:cherry_window",
+      "required": false
+    },
+    {
+      "id": "storagedrawers:cherry_trim",
+      "required": false
+    }
+  ]
+}

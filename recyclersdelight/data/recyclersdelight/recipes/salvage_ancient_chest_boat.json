@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  },
+  "ingredients": [
+    {
+      "item": "quark:ancient_chest_boat"
+    }
+  ],
+  "result": [
+    {
+      "item": "quark:ancient_boat"
+    },
+    {
+      "item": "chest"
+    }
+  ]
+}

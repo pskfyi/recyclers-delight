@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "tool": {
+    "tag": "forge:shears"
+  },
+  "ingredients": [
+    {
+      "tag": "recyclersdelight:salvage_1_leather"
+    }
+  ],
+  "result": [
+    {
+      "item": "leather",
+      "count": 1
+    }
+  ]
+}
