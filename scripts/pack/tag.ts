@@ -1,5 +1,5 @@
 import { Minecraft, tag } from "../minecraft/mod.ts";
-import { ITEMS_NOT_SUPPORTED_IN_ALL_VERSIONS } from "./versions.ts";
+import { ITEMS_NOT_SUPPORTED_IN_ALL_VERSIONS } from "./minecraftVersions.ts";
 import { REQUIRED_NAMESPACES } from "./constants.ts";
 import { DataPack } from "./DataPack.ts";
 
