@@ -11,6 +11,7 @@ This datapack has builtin compat for [Quark](https://www.curseforge.com/minecraf
 - Ladders and wooden slabs can be salvaged for sticks.
 - All items that produce dyes through crafting now produce dyes through cutting as well.
 - Add these tags to your items to get them included in the corresponding recipes:
+  - `#recyclersdelight:salvage_1_stick`
   - `#recyclersdelight:salvage_2_sticks`
   - `#recyclersdelight:salvage_1_leather`
   - `#recyclersdelight:salvage_1_WOOD_planks` (replace WOOD with a real wood name)
