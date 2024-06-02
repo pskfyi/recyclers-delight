@@ -26,41 +26,7 @@ Note that Quark woods are also accounted for.
 ## Roadmap
 
 <details>
-<summary><code>1.0.0</code> Release</summary>
-
-- [x] Use tag-based recipes to collapse existing recipes that have identical outputs
-  - [x] All wood types
-  - [x] Leather armor
-  - [x] Dyes
-- [x] Vanilla items
-  - [x] Vanilla dye items that weren't covered
-  - [x] Ladder
-  - [x] Buttons
-  - [x] Wooden Slabs
-  - [x] Chests and Trapped Chests
-  - [x] Barrel
-  - [x] Boats and Chest Boats
-  - [x] Wood and Stone Tools and Swords
-- [x] [Quark](https://www.curseforge.com/minecraft/mc-mods/quark) items
-  - [x] Variant Ladders
-  - [x] Variant Chests and Trapped Chests
-  - [x] Posts and Stripped Posts
-- [x] [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)
-  - [x] Trims
-- [x] [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries) and [Supplementaries Squared](https://www.curseforge.com/minecraft/mc-mods/supplementaries-squared) items
-  - [x] Item Shelves
-  - [x] Sign Posts
-- [x] [Create](https://www.curseforge.com/minecraft/mc-mods/create) items
-  - [x] Windows
-
-</details>
-
-<br/>
-
-<details>
 <summary>Post-<code>1.0.0</code> Release</summary>
-
-### Post-`1.0.0` Release
 
 - [ ] Vanilla items
   - [ ] Minecarts and Rails
