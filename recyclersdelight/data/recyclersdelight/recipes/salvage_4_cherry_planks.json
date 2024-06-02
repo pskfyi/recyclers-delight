@@ -1,18 +1,34 @@
 {
-  "type": "farmersdelight:cutting",
-  "tool": {
-    "type": "farmersdelight:tool_action",
-    "action": "axe_dig"
-  },
-  "ingredients": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "tag": "recyclersdelight:salvage_4_cherry_planks"
-    }
-  ],
-  "result": [
-    {
-      "item": "cherry_planks",
-      "count": 4
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "salvage_4_cherry_planks"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "type": "farmersdelight:tool_action",
+          "action": "axe_dig"
+        },
+        "ingredients": [
+          {
+            "tag": "recyclersdelight:salvage_4_cherry_planks"
+          }
+        ],
+        "result": [
+          {
+            "item": "cherry_planks",
+            "count": 4
+          }
+        ]
+      }
     }
   ]
 }

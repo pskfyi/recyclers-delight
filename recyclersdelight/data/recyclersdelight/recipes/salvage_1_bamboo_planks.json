@@ -1,17 +1,55 @@
 {
-  "type": "farmersdelight:cutting",
-  "tool": {
-    "type": "farmersdelight:tool_action",
-    "action": "axe_dig"
-  },
-  "ingredients": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "tag": "recyclersdelight:salvage_1_bamboo_planks"
-    }
-  ],
-  "result": [
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "type": "farmersdelight:tool_action",
+          "action": "axe_dig"
+        },
+        "ingredients": [
+          {
+            "tag": "recyclersdelight:salvage_1_bamboo_planks"
+          }
+        ],
+        "result": [
+          {
+            "item": "bamboo_planks"
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "bamboo_planks"
+        }
+      ]
+    },
     {
-      "item": "bamboo_planks"
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "type": "farmersdelight:tool_action",
+          "action": "axe_dig"
+        },
+        "ingredients": [
+          {
+            "tag": "recyclersdelight:salvage_1_bamboo_planks"
+          }
+        ],
+        "result": [
+          {
+            "item": "quark:bamboo_planks"
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "quark:bamboo_planks"
+        }
+      ]
     }
   ]
 }

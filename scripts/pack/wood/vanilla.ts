@@ -1,5 +1,6 @@
 import { NAMESPACE } from "../../constants/mod.ts";
-import { WOODS as VANILLA_WOODS } from "../../minecraft/mod.ts";
+import { condition } from "../../forge/mod.ts";
+import { tag, WOODS as VANILLA_WOODS } from "../../minecraft/mod.ts";
 import { DataPack } from "../DataPack.ts";
 import { generateWoodData, OMIT_ITEM } from "./generateWoodData.ts";
 
@@ -65,8 +66,6 @@ VANILLA_WOODS.map((wood) => {
   );
 });
 
-const RECIPE_CONDITIONS = {};
-
 const TAGS = {
   items: {
     ...oak.itemTags,
@@ -92,5 +91,37 @@ TAGS.items.salvage_4_oak_planks.unshift(
   "trapped_chest",
   "barrel",
 );
+
+TAGS.items.salvage_1_bamboo_planks = [
+  ...TAGS.items.salvage_1_bamboo_planks,
+  "quark:bamboo_planks_stairs",
+  "quark:bamboo_fence",
+  "quark:bamboo_fence_gate",
+  "quark:bamboo_door",
+  "quark:bamboo_trapdoor",
+  "quark:bamboo_pressure_plate",
+].map(tag.optionalValue);
+
+TAGS.items.salvage_4_bamboo_planks = [
+  ...TAGS.items.salvage_4_bamboo_planks, // FD cabinet is not in 1.19.2
+  "everycomp:sd/quark/bamboo_trim",
+  "everycomp:sd/quark/bamboo_half_drawers_1",
+  "everycomp:sd/quark/bamboo_half_drawers_2",
+  "everycomp:sd/quark/bamboo_half_drawers_4",
+  "everycomp:sd/quark/bamboo_full_drawers_1",
+  "everycomp:sd/quark/bamboo_full_drawers_2",
+  "everycomp:sd/quark/bamboo_full_drawers_4",
+  "everycomp:fd/quark/bamboo_cabinet",
+].map(tag.optionalValue);
+
+const RECIPE_CONDITIONS: DataPack.RecipeConditions[string] = {
+  // No cherry before 1.20.1 in our versions
+  salvage_1_cherry_planks: [condition.tagNotEmpty("salvage_1_cherry_planks")],
+  salvage_4_cherry_planks: [condition.tagNotEmpty("salvage_4_cherry_planks")],
+  salvage_cherry_bookshelf: [condition.itemExists("cherry_bookshelf")],
+  salvage_cherry_chest_boat: [condition.itemExists("cherry_chest_boat")],
+  // No bamboo rafts before 1.20.1 in our versions
+  salvage_bamboo_chest_raft: [condition.itemExists("bamboo_chest_raft")],
+};
 
 export { RECIPE_CONDITIONS, RECIPES, TAGS };

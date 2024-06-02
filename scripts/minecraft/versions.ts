@@ -16,6 +16,10 @@ export const ITEMS_NOT_SUPPORTED_BY_VERSION: Record<
     "crimson_hanging_sign",
     "crimson_boat",
     "crimson_chest_boat",
+    "bamboo_raft",
+    "bamboo_chest_raft",
+    "bamboo_mosaic_slab",
+    "bamboo_mosaic_stairs",
     ...WOODS.map((wood) => `${wood}_hanging_sign`),
   ],
 };

@@ -29,7 +29,10 @@ declare namespace DataPack {
   export type Recipe =
     | Minecraft.Recipe
     | FarmersDelight.Recipe
-    | Forge.ConditionalRecipeData<Minecraft.Recipe | FarmersDelight.Recipe>;
+    | Forge.ConditionalRecipeData<
+      | Minecraft.Recipe
+      | FarmersDelight.Recipe
+    >;
 
   export type RecipesByName = {
     [RecipeName: string]: Recipe;

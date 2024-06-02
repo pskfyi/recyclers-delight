@@ -1,9 +1,9 @@
 import { DataPack } from "../DataPack.ts";
 import * as tag from "../tag.ts";
-import { recipes } from "../../farmersdelight/mod.ts";
+import { FarmersDelight, recipes } from "../../farmersdelight/mod.ts";
 import { ingredient } from "../../minecraft/mod.ts";
 import { namespaced } from "../utils.ts";
-import { condition, recipes as forgeRecipe } from "../../forge/mod.ts";
+import { condition, Forge, recipes as forgeRecipe } from "../../forge/mod.ts";
 
 export const OMIT_ITEM = Symbol("omit");
 export type OmitSymbol = typeof OMIT_ITEM;
@@ -179,6 +179,50 @@ const WOODS_WITHOUT_BOATS_BEFORE_1_20_1 = [
   "crimson",
 ];
 
+function makePlanksRecipe(config: Config, amount: 1 | 4) {
+  const wood = config.wood;
+  const planks = config.planks;
+  const recipeKey = `salvage${amount}Planks` as const;
+
+  if (wood !== "bamboo") return RECIPES[recipeKey](wood, planks);
+
+  return {
+    type: "forge:conditional",
+    recipes: [
+      {
+        recipe: RECIPES[recipeKey]("bamboo", "bamboo_planks"),
+        conditions: [condition.itemExists("bamboo_planks")],
+      },
+      {
+        recipe: RECIPES[recipeKey](wood, `quark:bamboo_planks`),
+        conditions: [condition.itemExists("quark:bamboo_planks")],
+      },
+    ],
+  } as Forge.ConditionalRecipeData<FarmersDelight.Recipe>;
+}
+
+function makeBookshelfRecipe(config: Config) {
+  const wood = config.wood;
+  const planks = config.planks;
+  const bookshelf = config.bookshelf;
+
+  if (wood !== "bamboo") return RECIPES.salvageBookshelf(bookshelf, planks);
+
+  return {
+    type: "forge:conditional",
+    recipes: [
+      {
+        recipe: RECIPES.salvageBookshelf(bookshelf, "bamboo_planks"),
+        conditions: [condition.itemExists("bamboo_planks")],
+      },
+      {
+        recipe: RECIPES.salvageBookshelf(bookshelf, `quark:bamboo_planks`),
+        conditions: [condition.itemExists("quark:bamboo_planks")],
+      },
+    ],
+  } as Forge.ConditionalRecipeData<FarmersDelight.Recipe>;
+}
+
 function makeChestBoatRecipe(
   config: Config,
 ) {
@@ -208,18 +252,19 @@ function suppHangingSign(config: Config) {
 export function generateWoodData(options: GenerateWoodDataOptions): WoodData {
   const _config = _makeConfig(options);
   const wood = _config.wood;
-  const planks = _config.planks;
 
   const salvage1Planks = `salvage_1_${wood}_planks`;
   const salvage4Planks = `salvage_4_${wood}_planks`;
+  const salvageChestBoat = wood === "bamboo"
+    ? "salvage_bamboo_chest_raft"
+    : `salvage_${wood}_chest_boat`;
 
   return {
     recipes: {
-      [salvage1Planks]: RECIPES.salvage1Planks(wood, planks),
-      [salvage4Planks]: RECIPES.salvage4Planks(wood, planks),
-      [`salvage_${wood}_bookshelf`]: RECIPES
-        .salvageBookshelf(_config.bookshelf, planks),
-      [`salvage_${wood}_chest_boat`]: makeChestBoatRecipe(_config),
+      [salvage1Planks]: makePlanksRecipe(_config, 1),
+      [salvage4Planks]: makePlanksRecipe(_config, 4),
+      [`salvage_${wood}_bookshelf`]: makeBookshelfRecipe(_config),
+      [salvageChestBoat]: makeChestBoatRecipe(_config),
     },
     itemTags: tag.byType({
       items: {

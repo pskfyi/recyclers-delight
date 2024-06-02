@@ -1,22 +1,65 @@
 {
-  "type": "farmersdelight:cutting",
-  "tool": {
-    "type": "farmersdelight:tool_action",
-    "action": "axe_dig"
-  },
-  "ingredients": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "item": "quark:bamboo_bookshelf"
-    }
-  ],
-  "result": [
-    {
-      "item": "bamboo_planks",
-      "count": 4
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "type": "farmersdelight:tool_action",
+          "action": "axe_dig"
+        },
+        "ingredients": [
+          {
+            "item": "quark:bamboo_bookshelf"
+          }
+        ],
+        "result": [
+          {
+            "item": "bamboo_planks",
+            "count": 4
+          },
+          {
+            "item": "book",
+            "count": 3
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "bamboo_planks"
+        }
+      ]
     },
     {
-      "item": "book",
-      "count": 3
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "type": "farmersdelight:tool_action",
+          "action": "axe_dig"
+        },
+        "ingredients": [
+          {
+            "item": "quark:bamboo_bookshelf"
+          }
+        ],
+        "result": [
+          {
+            "item": "quark:bamboo_planks",
+            "count": 4
+          },
+          {
+            "item": "book",
+            "count": 3
+          }
+        ]
+      },
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "quark:bamboo_planks"
+        }
+      ]
     }
   ]
 }

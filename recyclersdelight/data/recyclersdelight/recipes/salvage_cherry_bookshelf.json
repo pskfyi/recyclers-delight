@@ -1,22 +1,35 @@
 {
-  "type": "farmersdelight:cutting",
-  "tool": {
-    "type": "farmersdelight:tool_action",
-    "action": "axe_dig"
-  },
-  "ingredients": [
+  "type": "forge:conditional",
+  "recipes": [
     {
-      "item": "quark:cherry_bookshelf"
-    }
-  ],
-  "result": [
-    {
-      "item": "cherry_planks",
-      "count": 4
-    },
-    {
-      "item": "book",
-      "count": 3
+      "conditions": [
+        {
+          "type": "forge:item_exists",
+          "item": "cherry_bookshelf"
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cutting",
+        "tool": {
+          "type": "farmersdelight:tool_action",
+          "action": "axe_dig"
+        },
+        "ingredients": [
+          {
+            "item": "quark:cherry_bookshelf"
+          }
+        ],
+        "result": [
+          {
+            "item": "cherry_planks",
+            "count": 4
+          },
+          {
+            "item": "book",
+            "count": 3
+          }
+        ]
+      }
     }
   ]
 }

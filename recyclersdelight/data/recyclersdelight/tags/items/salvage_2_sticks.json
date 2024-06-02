@@ -9,7 +9,10 @@
     "stone_pickaxe",
     "stone_shovel",
     "#recyclersdelight:ladders",
-    "bamboo_mosaic_slab",
+    {
+      "id": "bamboo_mosaic_slab",
+      "required": false
+    },
     {
       "id": "quark:bamboo_mosaic_vertical_slab",
       "required": false

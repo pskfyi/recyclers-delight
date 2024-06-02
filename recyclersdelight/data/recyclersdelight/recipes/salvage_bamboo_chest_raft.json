@@ -5,7 +5,7 @@
       "conditions": [
         {
           "type": "forge:item_exists",
-          "item": "cherry_chest_boat"
+          "item": "bamboo_chest_raft"
         }
       ],
       "recipe": {
@@ -16,12 +16,12 @@
         },
         "ingredients": [
           {
-            "item": "cherry_chest_boat"
+            "item": "bamboo_chest_raft"
           }
         ],
         "result": [
           {
-            "item": "cherry_boat"
+            "item": "bamboo_raft"
           },
           {
             "item": "chest"

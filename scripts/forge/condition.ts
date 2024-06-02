@@ -73,3 +73,7 @@ export function or(...conditions: Condition.Type[]): Condition.Or {
     values: conditions,
   };
 }
+
+export function tagNotEmpty(id: string) {
+  return not(tagEmpty(id));
+}

@@ -1,3 +1,5 @@
+import { condition } from "../../forge/mod.ts";
+import { DataPack } from "../DataPack.ts";
 import { generateWoodData } from "./generateWoodData.ts";
 
 const mod = "quark";
@@ -20,9 +22,9 @@ export const TAGS = {
   },
 };
 
-const QUARK_IS_LOADED = { type: "forge:mod_loaded", modid: mod };
+const QUARK_IS_LOADED = condition.modLoaded(mod);
 
-export const RECIPE_CONDITIONS = {
+export const RECIPE_CONDITIONS: DataPack.RecipeConditions[string] = {
   "salvage_1_ancient_planks": [QUARK_IS_LOADED],
   "salvage_1_azalea_planks": [QUARK_IS_LOADED],
   "salvage_1_blossom_planks": [QUARK_IS_LOADED],

@@ -1,5 +1,6 @@
 import { NAMESPACE } from "../constants/mod.ts";
 import { recipes } from "../farmersdelight/mod.ts";
+import { condition } from "../forge/mod.ts";
 import { DataPack } from "./DataPack.ts";
 import * as tag from "./tag.ts";
 
@@ -48,14 +49,14 @@ const TAGS = tag.byType({
   },
 });
 
-const RECIPE_CONDITIONS: DataPack.RecipeConditions[string] = {};
+const RECIPE_CONDITIONS: DataPack.RecipeConditions[string] = {
+  // Pitcher plant is not in 1.19.2
+  salvage_2_cyan_dye: [condition.tagNotEmpty("salvage_2_cyan_dye")],
+};
 
 Object.entries(TAGS.items).map(([name, values]) => {
   if (values.length === 0) {
-    RECIPE_CONDITIONS[name] = [{
-      type: "forge:not",
-      value: { type: "forge:tag_empty", tag: name },
-    }];
+    RECIPE_CONDITIONS[name] = [condition.tagNotEmpty(name)];
   }
 });
 
