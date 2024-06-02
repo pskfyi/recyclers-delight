@@ -2,6 +2,8 @@
 
 A Minecraft datapack for [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) adding more recipes for the cutting board, focused on deconstructing items into useful constituent components. It uses tag-based recipes, making it easy to register new items without bloating JEI/REI/EMI.
 
+This datapack has builtin compat for [Quark](https://www.curseforge.com/minecraft/mc-mods/quark), [Supplementaries](https://www.curseforge.com/minecraft/mc-mods/supplementaries), [Supplementaries Squared](https://www.curseforge.com/minecraft/mc-mods/supplementaries-squared), [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers), and [Create](https://www.curseforge.com/minecraft/mc-mods/create).
+
 ## Details
 
 - Consolidated existing Farmer's Delight recipes which output planks, leather, and dyes.
