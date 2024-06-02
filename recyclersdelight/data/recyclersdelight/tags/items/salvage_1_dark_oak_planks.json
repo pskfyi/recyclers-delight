@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_dark_oak",
+      "required": false
+    },
+    {
       "id": "quark:dark_oak_post",
       "required": false
     },

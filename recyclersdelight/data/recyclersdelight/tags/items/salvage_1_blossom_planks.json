@@ -33,6 +33,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:quark/hanging_sign_blossom",
+      "required": false
+    },
+    {
       "id": "quark:blossom_post",
       "required": false
     },

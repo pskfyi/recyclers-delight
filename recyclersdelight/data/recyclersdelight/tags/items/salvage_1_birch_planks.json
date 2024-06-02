@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_birch",
+      "required": false
+    },
+    {
       "id": "quark:birch_post",
       "required": false
     },

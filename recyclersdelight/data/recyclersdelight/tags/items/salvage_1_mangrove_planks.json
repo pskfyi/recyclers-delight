@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_mangrove",
+      "required": false
+    },
+    {
       "id": "quark:mangrove_post",
       "required": false
     },

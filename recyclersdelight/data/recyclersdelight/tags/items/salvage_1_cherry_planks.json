@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_cherry",
+      "required": false
+    },
+    {
       "id": "quark:cherry_post",
       "required": false
     },

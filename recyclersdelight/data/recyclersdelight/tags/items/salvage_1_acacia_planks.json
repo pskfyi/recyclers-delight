@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_acacia",
+      "required": false
+    },
+    {
       "id": "quark:acacia_post",
       "required": false
     },

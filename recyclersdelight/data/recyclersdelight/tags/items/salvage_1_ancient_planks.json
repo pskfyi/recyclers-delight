@@ -33,6 +33,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:quark/hanging_sign_ancient",
+      "required": false
+    },
+    {
       "id": "quark:ancient_post",
       "required": false
     },

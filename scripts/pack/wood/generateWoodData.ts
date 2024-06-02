@@ -193,6 +193,18 @@ function makeChestBoatRecipe(
     : recipe;
 }
 
+function suppHangingSign(config: Config) {
+  const wood = config.wood;
+  const mod = config.mod;
+  const id = config.hanging_sign;
+
+  if (id === "") return "";
+  if (mod === "quark") return `supplementaries:quark/hanging_sign_${wood}`;
+  if (mod) return "";
+
+  return `supplementaries:hanging_sign_${wood}`;
+}
+
 export function generateWoodData(options: GenerateWoodDataOptions): WoodData {
   const _config = _makeConfig(options);
   const wood = _config.wood;
@@ -220,6 +232,7 @@ export function generateWoodData(options: GenerateWoodDataOptions): WoodData {
           _config.pressure_plate,
           _config.sign,
           _config.hanging_sign,
+          suppHangingSign(_config),
           _config.post,
           _config.stripped_post,
           _config.window,

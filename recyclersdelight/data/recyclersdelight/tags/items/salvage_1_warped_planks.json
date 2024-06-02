@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_warped",
+      "required": false
+    },
+    {
       "id": "quark:warped_post",
       "required": false
     },

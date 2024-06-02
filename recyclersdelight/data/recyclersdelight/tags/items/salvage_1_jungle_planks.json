@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_jungle",
+      "required": false
+    },
+    {
       "id": "quark:jungle_post",
       "required": false
     },

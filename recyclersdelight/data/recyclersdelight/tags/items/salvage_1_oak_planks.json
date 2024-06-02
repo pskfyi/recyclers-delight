@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_oak",
+      "required": false
+    },
+    {
       "id": "quark:oak_post",
       "required": false
     },

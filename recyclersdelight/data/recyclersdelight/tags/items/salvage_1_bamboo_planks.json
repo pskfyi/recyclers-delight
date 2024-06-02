@@ -13,6 +13,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_bamboo",
+      "required": false
+    },
+    {
       "id": "create:bamboo_window",
       "required": false
     },

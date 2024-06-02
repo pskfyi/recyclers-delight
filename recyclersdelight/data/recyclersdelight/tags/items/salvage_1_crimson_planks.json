@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_crimson",
+      "required": false
+    },
+    {
       "id": "quark:crimson_post",
       "required": false
     },

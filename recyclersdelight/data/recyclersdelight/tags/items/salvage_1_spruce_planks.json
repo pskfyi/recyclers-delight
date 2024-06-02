@@ -12,6 +12,10 @@
       "required": false
     },
     {
+      "id": "supplementaries:hanging_sign_spruce",
+      "required": false
+    },
+    {
       "id": "quark:spruce_post",
       "required": false
     },
