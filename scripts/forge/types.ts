@@ -1,12 +1,6 @@
-import { Minecraft } from "../minecraft/mod.ts";
+import { Condition } from "./condition.ts";
+import { ConditionalRecipeData } from "./recipes.ts";
 
 export declare namespace Forge {
-  export type Condition = Record<string, unknown>; // TODO: better typedef
-  export type ConditionalRecipeData<TRecipe = Minecraft.Recipe> = {
-    type: "forge:conditional";
-    "recipes": Array<{
-      conditions: Condition[];
-      recipe: TRecipe;
-    }>;
-  };
+  export { Condition, ConditionalRecipeData };
 }

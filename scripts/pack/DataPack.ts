@@ -42,7 +42,7 @@ declare namespace DataPack {
 
   export type RecipeConditions = {
     [Namespace: string]: {
-      [RecipeName: string]: Forge.Condition[];
+      [RecipeName: string]: Forge.Condition.Type[];
     };
   };
 
