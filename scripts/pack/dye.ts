@@ -1,8 +1,7 @@
 import { NAMESPACE } from "../constants/mod.ts";
 import { recipes } from "../farmersdelight/mod.ts";
-import { Forge } from "../forge/mod.ts";
 import { DataPack } from "./DataPack.ts";
-import { tagsByType } from "./utils.ts";
+import * as tag from "./tag.ts";
 
 const RECIPES: DataPack.RecipesByNamespace = {
   farmersdelight: {},
@@ -28,7 +27,7 @@ removeRecipe("cutting/red_tulip");
 removeRecipe("cutting/wither_rose");
 removeRecipe("cutting/ink_sac");
 
-const TAGS = tagsByType({
+const TAGS = tag.byType({
   items: {
     "salvage_2_white_dye": ["lily_of_the_valley"],
     "salvage_2_orange_dye": ["orange_tulip"],
@@ -49,7 +48,7 @@ const TAGS = tagsByType({
   },
 });
 
-const RECIPE_CONDITIONS: Record<string, Forge.Condition[]> = {};
+const RECIPE_CONDITIONS: DataPack.RecipeConditions[string] = {};
 
 Object.entries(TAGS.items).map(([name, values]) => {
   if (values.length === 0) {

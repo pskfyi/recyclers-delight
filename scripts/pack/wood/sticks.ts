@@ -1,5 +1,6 @@
 import { DataPack } from "../DataPack.ts";
-import { namespaced, tagsByType } from "../utils.ts";
+import { namespaced } from "../utils.ts";
+import * as tag from "../tag.ts";
 import { NAMESPACE } from "../../constants/namespace.ts";
 import { recipes } from "../../farmersdelight/mod.ts";
 import { ingredient } from "../../minecraft/mod.ts";
@@ -22,7 +23,7 @@ export const RECIPES: DataPack.RecipesByName = {
 
 export const RECIPE_CONDITIONS = {};
 
-export const TAGS = tagsByType({
+export const TAGS = tag.byType({
   items: {
     ladders: [
       "ladder",

@@ -7,7 +7,10 @@
     "dark_oak_trapdoor",
     "dark_oak_pressure_plate",
     "dark_oak_sign",
-    "dark_oak_hanging_sign",
+    {
+      "id": "dark_oak_hanging_sign",
+      "required": false
+    },
     {
       "id": "quark:dark_oak_post",
       "required": false

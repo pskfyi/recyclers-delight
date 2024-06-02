@@ -7,7 +7,10 @@
     "mangrove_trapdoor",
     "mangrove_pressure_plate",
     "mangrove_sign",
-    "mangrove_hanging_sign",
+    {
+      "id": "mangrove_hanging_sign",
+      "required": false
+    },
     {
       "id": "quark:mangrove_post",
       "required": false

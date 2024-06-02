@@ -8,7 +8,10 @@
     "bamboo_trapdoor",
     "bamboo_pressure_plate",
     "bamboo_sign",
-    "bamboo_hanging_sign",
+    {
+      "id": "bamboo_hanging_sign",
+      "required": false
+    },
     {
       "id": "create:bamboo_window",
       "required": false

@@ -3,7 +3,6 @@ import { FarmersDelight } from "../farmersdelight/types.ts";
 import { Forge } from "../forge/mod.ts";
 import { conditional } from "../forge/recipes.ts";
 import { Minecraft } from "../minecraft/mod.ts";
-import { optional } from "./utils.ts";
 
 async function writeJsonFile(path: string, data: unknown) {
   await Deno.writeTextFile(path, JSON.stringify(data, null, 2));
@@ -176,13 +175,6 @@ class DataPack {
     data: Minecraft.Tag.Data,
   ) {
     const path = `${this.dir}/data/${namespace}/tags/${type}/${tagName}.json`;
-    data.values = data.values.map((value) =>
-      typeof value === "object"
-        ? value
-        : this.hasRequiredNamespace(value)
-        ? value
-        : optional(value)
-    );
 
     await Deno.mkdir(dirname(path), { recursive: true });
     await writeJsonFile(path, data);

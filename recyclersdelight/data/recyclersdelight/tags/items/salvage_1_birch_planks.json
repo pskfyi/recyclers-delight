@@ -7,7 +7,10 @@
     "birch_trapdoor",
     "birch_pressure_plate",
     "birch_sign",
-    "birch_hanging_sign",
+    {
+      "id": "birch_hanging_sign",
+      "required": false
+    },
     {
       "id": "quark:birch_post",
       "required": false

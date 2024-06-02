@@ -7,7 +7,10 @@
     "warped_trapdoor",
     "warped_pressure_plate",
     "warped_sign",
-    "warped_hanging_sign",
+    {
+      "id": "warped_hanging_sign",
+      "required": false
+    },
     {
       "id": "quark:warped_post",
       "required": false

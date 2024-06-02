@@ -1,8 +1,9 @@
 import { DataPack } from "../DataPack.ts";
-import { tagsByType } from "../utils.ts";
+import * as tag from "../tag.ts";
 import { recipes } from "../../farmersdelight/mod.ts";
 import { ingredient } from "../../minecraft/mod.ts";
 import { namespaced } from "../utils.ts";
+import { condition, recipes as forgeRecipe } from "../../forge/mod.ts";
 
 export const OMIT_ITEM = Symbol("omit");
 export type OmitSymbol = typeof OMIT_ITEM;
@@ -173,6 +174,25 @@ function _makeConfig(options: GenerateWoodDataOptions): Config {
   };
 }
 
+const WOODS_WITHOUT_BOATS_BEFORE_1_20_1 = [
+  "warped",
+  "crimson",
+];
+
+function makeChestBoatRecipe(
+  config: Config,
+) {
+  const wood = config.wood;
+  const chestBoatID = config.chest_boat;
+  const boatID = config.boat;
+  const recipe = RECIPES.salvageChestBoat(chestBoatID, boatID);
+
+  return WOODS_WITHOUT_BOATS_BEFORE_1_20_1.includes(wood)
+    ? forgeRecipe
+      .conditional(recipe, [condition.itemExists(`${wood}_chest_boat`)])
+    : recipe;
+}
+
 export function generateWoodData(options: GenerateWoodDataOptions): WoodData {
   const _config = _makeConfig(options);
   const wood = _config.wood;
@@ -187,10 +207,9 @@ export function generateWoodData(options: GenerateWoodDataOptions): WoodData {
       [salvage4Planks]: RECIPES.salvage4Planks(wood, planks),
       [`salvage_${wood}_bookshelf`]: RECIPES
         .salvageBookshelf(_config.bookshelf, planks),
-      [`salvage_${wood}_chest_boat`]: RECIPES
-        .salvageChestBoat(_config.chest_boat, _config.boat),
+      [`salvage_${wood}_chest_boat`]: makeChestBoatRecipe(_config),
     },
-    itemTags: tagsByType({
+    itemTags: tag.byType({
       items: {
         [salvage1Planks]: [
           _config.stairs,

@@ -7,7 +7,10 @@
     "crimson_trapdoor",
     "crimson_pressure_plate",
     "crimson_sign",
-    "crimson_hanging_sign",
+    {
+      "id": "crimson_hanging_sign",
+      "required": false
+    },
     {
       "id": "quark:crimson_post",
       "required": false
